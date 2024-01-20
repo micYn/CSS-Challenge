@@ -1,0 +1,97 @@
+body{
+    background-color: rgba(186, 212, 255, 0.5);
+}
+h1{
+    font-family: 'Playfair Display';
+    font-weight: bolder;
+    font-style: normal;
+}
+h2{
+    font-family: 'Playfair Display';
+    font-weight: bolder;
+    font-style: normal;
+}
+p{
+    font-family: 'Saira Extra Condensed';
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+}
+li{
+    font-family: 'Saira Extra Condensed';
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+.sidebar{
+    margin-right: 0px;
+    display: grid;
+}
+.sidebar-item{
+    align-content: space-around;
+    border: 2px solid rgb(229, 158, 66);
+    margin: 5px 5px;
+}
+.sidebar-item > h2{
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.sidebar-item > p{
+    margin-left: 20px;
+    font-size: larger;
+}
+.sidebar-item > a{
+    font-size: larger;
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(70, 137, 244);
+    transition: color 500ms ease 0ms;
+}
+.sidebar-item > a:hover{
+    color: rgb(186, 212, 255);
+}
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    width: 20vw;
+    height: 20vh;
+
+    transition: all 300ms ease-in-out 0ms;
+}
+img:hover{
+    width: 22vw;
+    height: 22vh;
+}
+.image-grid > img{
+    margin: 10px 10px;
+}
+#img-1{
+    float: right;
+    margin: 10px 10px;
+    width: 18vw;
+    height: 20vh;
+
+    transition: all 300ms ease-in-out 0ms;
+}
+#img-1:hover{
+    width: 20vw;
+}
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.content{
+    animation: fade-in 1.5s linear 0s 1 normal;
+}
+.sidebar{
+    animation: fade-in 1.5s linear 0s 1 normal;
+}
